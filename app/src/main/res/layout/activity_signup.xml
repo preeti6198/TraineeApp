@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/preeti">
+
+        <TextView
+            android:id="@+id/text_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_Name"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Fab_margine" />
+
+        <EditText
+            android:id="@+id/edt_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_firstname"
+            android:hint="@string/enter_your_firstname" />
+
+
+        <TextView
+            android:id="@+id/text_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_firstname"
+            android:text="@string/Last_Name"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Fab_margine" />
+
+        <EditText
+            android:id="@+id/edt_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_lastname"
+            android:hint="@string/enter_your_lastname" />
+
+        <TextView
+            android:id="@+id/text_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_lastname"
+            android:text="@string/Phone_Number"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Fab_margine" />
+
+        <EditText
+            android:id="@+id/edt_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_phonenumber"
+            android:hint="@string/enter_your_phonenumber"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <TextView
+            android:id="@+id/text_emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_phonenumber"
+            android:text="@string/Email_address"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Fab_margine" />
+
+
+        <EditText
+            android:id="@+id/edt_emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_emailaddress"
+            android:hint="@string/enter_your_email" />
+
+        <TextView
+            android:id="@+id/text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_emailaddress"
+            android:text="@string/Password"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Fab_margine" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_password"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/text_confirmationpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:text="@string/confirmation_Password"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/Fab_margine" />
+
+        <EditText
+            android:id="@+id/edt_confirmationpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_confirmationpassword"
+            android:hint="@string/enter_your_confirmation_password"
+            android:inputType="textPassword" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_confirmationpassword">
+
+            <RadioGroup
+                android:id="@+id/rdg_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbbtn_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Male"
+                    android:textSize="@dimen/Fab_margine" />
+
+                <RadioButton
+                    android:id="@+id/rdbbtn_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/Female"
+                    android:textSize="@dimen/Fab_margine" />
+
+                <RadioButton
+                    android:id="@+id/rdbbtn_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/others"
+                    android:textSize="@dimen/Fab_margine" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rdg_sex"
+                android:layout_centerHorizontal="true"
+                android:text="@string/SIGN_UP"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/Fab_margine" />
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_signup">
+
+                <TextView
+                    android:id="@+id/txt_alreadyhaveanaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/Fab_margine" />
+
+                <TextView
+                    android:id="@+id/text_loginnow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_alreadyhaveanaccount"
+                    android:text="Login Now "
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/Fab_margine" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
